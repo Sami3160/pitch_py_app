@@ -46,7 +46,7 @@ def post_recommend():
         }), 500
 @app.route('/ping', methods=['GET'])
 def ping():
-    return "pinged"
+    return "pinged",200
 
 
 if __name__ == '__main__':
