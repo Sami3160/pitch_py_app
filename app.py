@@ -44,6 +44,10 @@ def post_recommend():
         return jsonify({
             "error": str(e)
         }), 500
+@app.route('/ping', methods=['GET'])
+def ping():
+    return "pinged"
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=6000)
